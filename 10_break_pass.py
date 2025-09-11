@@ -7,7 +7,7 @@ while True:
 print ('while문 종료!')
 
 
-for i in range (1,10):
-    if i%3==0:
+for i in range (1,30):
+    if i%3==0 :
         continue
     print(i)
