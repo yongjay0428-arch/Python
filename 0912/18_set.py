@@ -22,5 +22,16 @@ print(f'교집합2:{s1.intersection(s2)}')
 print(f'차집합1:{s1 - s2}'); print(f'차집합1:{s2-s1}') #차집합 시에 앞뒤 주의!
 print(f'차집합2:{s1.difference(s2)}') #차집합!
 
-#값 한개 or 여러개 추가
+#값 한개 추가하기
+s1.add(10)
+print(s1)
+#값 여러개 추가하기
+s1.update([10,20,30])
+print(s1)
 #특정 값 제거하기ㅇ
+s1.remove(10)
+print(s1)
+# s1.remove(10)
+# print(s1) - KeyError: 10 !없는 값을 지우려고 했기 때문에 keyerror발생
+
+s1.discard(10) #remove와 동일하지만 없는거 지워도 에러가 나지 않는다
