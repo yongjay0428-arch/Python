@@ -5,6 +5,7 @@ print(number_set)
 #중복이면 안받아 버리니까 그냥 그 용도로 사용해도 된다
 str_set = set("Helloworld")
 print(str_set)
+print(str_set)
 
 listset=list(str_set)
 print(listset)

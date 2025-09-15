@@ -15,7 +15,9 @@ print(a)
 #사전에 데이터 넣기2
 a['second'] = 'b'
 print(a)
+a['name'] = 'john'
 
+print(a)
 #사전에서 특정 요소 삭제
 del a['second']
 print(a)
