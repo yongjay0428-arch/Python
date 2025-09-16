@@ -1,5 +1,3 @@
-from ctypes import HRESULT
-
 
 def plus(num) :
     result = num+5
@@ -10,7 +8,7 @@ print (plus(5))
 
 #튜플은 수정이 불가능한 인자 형태이다. 튜플의 특징으로는 소괄호 사용과 수정이 불가하다!
 def tuple_args(*numbers):
-    print(numbers) #변수 앞의 *은 포인터, 변수마다 메모리를 직접 지정가능 -C / 우리는 인자종류 지정
+    print(numbers) # 변수 앞의 *은 포인터, 변수마다 메모리를 직접 지정가능 -C / 우리는 인자종류 지정
     total = 0
     for num in numbers:
         total += num
@@ -26,16 +24,16 @@ def dic_args(**dic):
         result +=i
     print(result)
 
-    # result=0
-    # for key in dic.keys():
-    #     result += dic[key]
-    # print(result)
-    #
-    # result=0
-    # for items in dic.items():
-    #     result += items[1]
-    # print(result)
-    #
-    # print(sum(dic.values()))
+    result=0
+    for key in dic.keys():
+        result += dic[key]
+    print(result)
+
+    result=0
+    for items in dic.items():
+        result += items[1]
+    print(result)
+
+    print(sum(dic.values()))
 
 dic_args(kim=50,lee=100,pakr=70,na=90)

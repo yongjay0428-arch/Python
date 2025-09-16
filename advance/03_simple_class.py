@@ -11,3 +11,7 @@ std3 = Student()
 print(std1)
 print(std2)
 print(std3)
+
+std1.name='홍길동'
+std1.num='1'
+print(std1)
