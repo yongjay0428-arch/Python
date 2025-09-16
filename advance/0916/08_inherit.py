@@ -15,6 +15,7 @@ class Person(Jumper, Runner): #Jumper와 Runner를 상속받았다
 p = Person()
 p.walk()
 #상속함수들을 내것처럼 사용할 수 있다
+#상속의 장점 - 객체입장에서의 기능이 확장 / 사용자 입장에서는 하나의 객체화로 여러 기능 사용
 p.run()
 p.sprint()
 p.jump()
