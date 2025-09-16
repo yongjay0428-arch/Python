@@ -23,3 +23,6 @@ class Teacher(SchoolMember):
     def __init__(self, name, age, salary): #하나는내껀데 다른건 부모클래스에게 전달
         super().__init__(name, age)
         self.salary = salary
+
+t=Teacher('홍길동','40','300만원')
+print(f'{t.name}:({t.age}세) - ({t.salary})')
